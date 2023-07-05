@@ -1,5 +1,5 @@
-button:hover{
-    cursor: pointer;
+body{
+    background-color: rgb(255, 222, 192);
 }
 
 h1{
@@ -11,7 +11,13 @@ h2{
 }
 
 img{
+    width: 100%;
     max-width: 400px;
+}
+
+video{
+    width: 100%;
+    max-width: 600px;
 }
 
 .contenedor{
@@ -22,7 +28,6 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .modo_hot{
@@ -33,7 +38,10 @@ img{
     width: 100%;
     height: 100%;
     z-index: 100;
-    margin-bottom: auto;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .no{
@@ -48,7 +56,7 @@ img{
 }
 
 .button {
-    min-width: 300px;
+    min-width: 200px;
     min-height: 60px;
     font-family: 'Nunito', sans-serif;
     font-size: 22px;
@@ -71,7 +79,7 @@ img{
 .button::before {
     content: '';
     border-radius: 1000px;
-    min-width: calc(300px + 12px);
+    min-width: calc(200px + 12px);
     min-height: calc(60px + 12px);
     border: 6px solid #00FFCB;
     box-shadow: 0 0 60px rgba(0,255,203,.64);
@@ -117,8 +125,8 @@ img{
         opacity: 1;
     }
     100% {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         opacity: 0;
     }
 }
